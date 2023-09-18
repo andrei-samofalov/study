@@ -1,0 +1,30 @@
+### GET Author list
+GET localhost:8080/authors
+Accept: application/json
+
+
+### GET Author by ID
+GET localhost:8080/authors/2
+Accept: application/json
+
+
+### POST Create Author
+POST localhost:8080/authors
+Content-Type: application/json
+
+{"name": "test"}
+
+
+### DELETE Soft delete Author
+DELETE localhost:8080/authors/4
+Content-Type: application/json
+
+
+### PUT Update Author
+PUT localhost:8080/authors/4
+Content-Type: application/json
+
+{
+  "name": "new test",
+  "is_deleted": true
+}
